@@ -1,122 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Proseminar Web Engineering im Sommersemester 2014 - Store in the Cloud or
-      not in the Cloud
-    </title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  </head>
-  <body>
-    <header>
-      <h2>Proseminar Web Engineering im Sommersemester 2022</h2>
-      <h1>Scientific Skills: Evaluation in Software Engineering</h1>
-      <h2 class="author">Frenkli Kapri</h2>
-      <h2 class="author">Rabinson Ghatani</h2>
-      <h3 class="affiliation">
-        Professur Verteilte und Selbstorganisierende Rechnersysteme<br />
-        Technische Universität Chemnitz<br />
-        Chemnitz, Deutschland
-      </h3>
-    </header>
-    <section>
-      <h2>1. Einleitung</h2>
-      <p>
-        In den letzten Jahren hat die Beliebtheit und damit auch das Angebot von
-        Cloud-Diensten stark zugenommen. Die Gründe dafür sind vielseitig, so
-        wirken die steigende Tendenz zur Nutzung mehrerer mobiler Endgeräte,
-        ebenso wie die Mobilität des Arbeitsortes sich positiv auf diesen Trend
-        aus. Zusätzlich vergrößert sich im digitalen Zeitalter der für Medien
-        beanspruchte Speicherplatz rapide.
-      </p>
-      <p>
-        Doch gerade in den letzten Jahren steigt zeitgleich auch das Bewusstsein
-        für Datenschutz und Privatsphäre im Netz. Dies stellt die Anbieter von
-        Cloud Diensten zum einen vor die Herausforderung eine ansprechende Menge
-        an Speicherplatz günstig bereitzustellen und gleichzeitig die Daten der
-        Kunden ausreichend vor unbefugtem Zugriff zu schützen. Dazu zählen
-        natürlich Maßnahmen für die sichere Übertragung von Daten, sowie die
-        Verschlüsselung bei Ablage auf den Servern. Aber auch die
-        Authentifizierung des Nutzers spielt eine wichtige Rolle, vor allem weil
-        hier der Anwender selbst aktiv werden kann.
-      </p>
-      <p>
-        Zwei solcher Anbieter sind Dropbox und GoogleDrive. Im Folgenden werden
-        diese beiden hinsichtlich ihres Angebots und Sicherheitsaspekten
-        analysiert. Als zusätzliche Verschlüsselungssoftware wird Boxcryptor und
-        als alternative Lösung BittorrentSync vorgestellt. Zum Schluss wird auf
-        die Option sich eine eigene Cloud mittels ownCloud zu bauen eingegangen,
-        sowie das Ergebnis dessen präsentiert.
-      </p>
-    </section>
-    <section>
-      <h2>2. Gegenüberstellung verschiedener Anbieter</h2>
-      <h3>2.1. Allgemeiner Überblick</h3>
 
-      <p>
-        Die Attraktivität, Daten in der Cloud zu speichern, ergibt sich in der
-        Regel aus mindestens einer der folgenden Funktionsmöglichkeiten.
-        Grundlegende Idee ist die Möglichkeit eine Kopie einer lokal
-        gespeicherten Datei zu erstellen und durch Speichern in der Cloud diese
-        Datei von überall abrufen zu können. Wenn dieser Zugriff nun von
-        mehreren Geräten aus geschieht, ergibt sich daraus die Notwendigkeit der
-        Synchronisation von solchen Daten, sodass diese immer auf dem
-        aktuellsten Stand sind. Des Weiteren ist das Teilen von Daten und die
-        variable Rechtevergabe eine wichtige Cloud-Funktion. Auch hier wird
-        wieder die Synchronisation zu einem wichtigen Thema, vor allem wenn es
-        um Team- oder Projektarbeiten geht. Zu guter Letzt wird gerne auf die
-        Option des Backups zurückgegriffen. Hier werden über einen längeren
-        Zeitraum immer wieder Kopien von Dateien erstellt, welche dann die
-        verschiedenen Versionen innerhalb eines Entwicklungsprozesses darstellen
-        und die Möglichkeit zur Wiederherstellung älterer Versionen bieten
-        <a href="#r3">[3]</a>.
-      </p>
-      <p>
-        Einer der bekanntesten Anbieter und mit über 300 Millionen registrierten
-        Nutzern <a href="#r7">[7]</a> ist Dropbox. Als dieser Dienst 2008 online
-        ging, stand zuerst die einfache Verwaltung von Daten unabhängig vom
-        persönlichen Standort im Vordergrund <a href="#r7">[7]</a>. Mittlerweile
-        wurden weitere Funktionen hinzugefügt. Als kostenloser Speicher stehen
-        2GB zur Verfügung, mit der zusätzlichen Option zur Erweiterung auf bis
-        zu 16GB. Außerdem beinhaltet das Leistungsspektrum die Möglichkeit
-        Dateien und Ordner zu teilen, Offline zu bearbeiten und ältere Versionen
-        wiederherzustellen. Es gibt mehrere Wege, diese Optionen zu nutzen.
-        Angefangen über ein leicht bedienbares Webinterface im Browser gibt es
-        außerdem Clients für Windows, MacOS und Linux. Für Smartphone und Tablet
-        stehen außerdem Apps für die Betriebssysteme Blackberry, iOs und Android
-        zur Verfügung <a href="#r7">[7]</a>.
-      </p>
-      <p>
-        Als einer der Marktführer bei Internetdienstleistungen bietet Google.Inc
-        ebenfalls einen Cloud Service an. Dieser entwickelte sich aus der
-        Anwendung GoogleDocs und ging 2012 online. Laut eigenen Angaben benutzen
-        über 190 Millionen Anwender diesen bereitgestellten und in die Vielzahl
-        von eigenen Anwendungen integrierten Service <a href="#r8">[8]</a>. Der
-        kostenfreie Speicherplatz ist um einiges größer als der von Dropbox,
-        nämlich 15GB. Neben den bereits erläuterten Standardfunktionen wie
-        Synchronisation und Offline Bearbeitung gibt es zusätzlich beim Teilen
-        die Möglichkeit die Rechte der Dritten zu definieren. Außerdem wird
-        durch die Integration der anderen Google Dienste, wie beispielsweise
-        Gmail, Google+ oder Picasa Webalben, das Speichern bestimmter Daten in
-        der Cloud vereinfacht. So kann zum Beispiel ein Dokument im Anhang einer
-        Email direkt in GoogleDrive abgelegt werden <a href="#r8">[8]</a>. Die
-        Nutzung des Dienstes ist auch hier sowohl über den Browser, als auch
-        über Clients für alle PC Betriebssysteme oder Apps für mobile Geräte
-        möglich.
-      </p>
-      <figure>
-        <pre>
+<head>
+  <title>
+    Proseminar Web Engineering im Sommersemester 2014 - Store in the Cloud or
+    not in the Cloud
+  </title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+  <header>
+    <h2>Proseminar Web Engineering im Sommersemester 2022</h2>
+    <h1>Scientific Skills: Evaluation in Software Engineering</h1>
+    <h2 class="author">Frenkli Kapri</h2>
+    <h2 class="author">Rabinson Ghatani</h2>
+    <h3 class="affiliation">
+      Professur Verteilte und Selbstorganisierende Rechnersysteme<br />
+      Technische Universität Chemnitz<br />
+      Chemnitz, Deutschland
+    </h3>
+  </header>
+  <section>
+    <h2>1. Einleitung</h2>
+    <p>
+      In den letzten Jahren hat die Beliebtheit und damit auch das Angebot von
+      Cloud-Diensten stark zugenommen. Die Gründe dafür sind vielseitig, so
+      wirken die steigende Tendenz zur Nutzung mehrerer mobiler Endgeräte,
+      ebenso wie die Mobilität des Arbeitsortes sich positiv auf diesen Trend
+      aus. Zusätzlich vergrößert sich im digitalen Zeitalter der für Medien
+      beanspruchte Speicherplatz rapide.
+    </p>
+    <p>
+      Doch gerade in den letzten Jahren steigt zeitgleich auch das Bewusstsein
+      für Datenschutz und Privatsphäre im Netz. Dies stellt die Anbieter von
+      Cloud Diensten zum einen vor die Herausforderung eine ansprechende Menge
+      an Speicherplatz günstig bereitzustellen und gleichzeitig die Daten der
+      Kunden ausreichend vor unbefugtem Zugriff zu schützen. Dazu zählen
+      natürlich Maßnahmen für die sichere Übertragung von Daten, sowie die
+      Verschlüsselung bei Ablage auf den Servern. Aber auch die
+      Authentifizierung des Nutzers spielt eine wichtige Rolle, vor allem weil
+      hier der Anwender selbst aktiv werden kann.
+    </p>
+    <p>
+      Zwei solcher Anbieter sind Dropbox und GoogleDrive. Im Folgenden werden
+      diese beiden hinsichtlich ihres Angebots und Sicherheitsaspekten
+      analysiert. Als zusätzliche Verschlüsselungssoftware wird Boxcryptor und
+      als alternative Lösung BittorrentSync vorgestellt. Zum Schluss wird auf
+      die Option sich eine eigene Cloud mittels ownCloud zu bauen eingegangen,
+      sowie das Ergebnis dessen präsentiert.
+    </p>
+  </section>
+  <section>
+    <h2>2. Gegenüberstellung verschiedener Anbieter</h2>
+    <h3>2.1. Allgemeiner Überblick</h3>
+
+    <p>
+      Die Attraktivität, Daten in der Cloud zu speichern, ergibt sich in der
+      Regel aus mindestens einer der folgenden Funktionsmöglichkeiten.
+      Grundlegende Idee ist die Möglichkeit eine Kopie einer lokal
+      gespeicherten Datei zu erstellen und durch Speichern in der Cloud diese
+      Datei von überall abrufen zu können. Wenn dieser Zugriff nun von
+      mehreren Geräten aus geschieht, ergibt sich daraus die Notwendigkeit der
+      Synchronisation von solchen Daten, sodass diese immer auf dem
+      aktuellsten Stand sind. Des Weiteren ist das Teilen von Daten und die
+      variable Rechtevergabe eine wichtige Cloud-Funktion. Auch hier wird
+      wieder die Synchronisation zu einem wichtigen Thema, vor allem wenn es
+      um Team- oder Projektarbeiten geht. Zu guter Letzt wird gerne auf die
+      Option des Backups zurückgegriffen. Hier werden über einen längeren
+      Zeitraum immer wieder Kopien von Dateien erstellt, welche dann die
+      verschiedenen Versionen innerhalb eines Entwicklungsprozesses darstellen
+      und die Möglichkeit zur Wiederherstellung älterer Versionen bieten
+      <a href="#r3">[3]</a>.
+    </p>
+    <p>
+      Einer der bekanntesten Anbieter und mit über 300 Millionen registrierten
+      Nutzern <a href="#r7">[7]</a> ist Dropbox. Als dieser Dienst 2008 online
+      ging, stand zuerst die einfache Verwaltung von Daten unabhängig vom
+      persönlichen Standort im Vordergrund <a href="#r7">[7]</a>. Mittlerweile
+      wurden weitere Funktionen hinzugefügt. Als kostenloser Speicher stehen
+      2GB zur Verfügung, mit der zusätzlichen Option zur Erweiterung auf bis
+      zu 16GB. Außerdem beinhaltet das Leistungsspektrum die Möglichkeit
+      Dateien und Ordner zu teilen, Offline zu bearbeiten und ältere Versionen
+      wiederherzustellen. Es gibt mehrere Wege, diese Optionen zu nutzen.
+      Angefangen über ein leicht bedienbares Webinterface im Browser gibt es
+      außerdem Clients für Windows, MacOS und Linux. Für Smartphone und Tablet
+      stehen außerdem Apps für die Betriebssysteme Blackberry, iOs und Android
+      zur Verfügung <a href="#r7">[7]</a>.
+    </p>
+    <p>
+      Als einer der Marktführer bei Internetdienstleistungen bietet Google.Inc
+      ebenfalls einen Cloud Service an. Dieser entwickelte sich aus der
+      Anwendung GoogleDocs und ging 2012 online. Laut eigenen Angaben benutzen
+      über 190 Millionen Anwender diesen bereitgestellten und in die Vielzahl
+      von eigenen Anwendungen integrierten Service <a href="#r8">[8]</a>. Der
+      kostenfreie Speicherplatz ist um einiges größer als der von Dropbox,
+      nämlich 15GB. Neben den bereits erläuterten Standardfunktionen wie
+      Synchronisation und Offline Bearbeitung gibt es zusätzlich beim Teilen
+      die Möglichkeit die Rechte der Dritten zu definieren. Außerdem wird
+      durch die Integration der anderen Google Dienste, wie beispielsweise
+      Gmail, Google+ oder Picasa Webalben, das Speichern bestimmter Daten in
+      der Cloud vereinfacht. So kann zum Beispiel ein Dokument im Anhang einer
+      Email direkt in GoogleDrive abgelegt werden <a href="#r8">[8]</a>. Die
+      Nutzung des Dienstes ist auch hier sowohl über den Browser, als auch
+      über Clients für alle PC Betriebssysteme oder Apps für mobile Geräte
+      möglich.
+    </p>
+    <figure>
+      <pre>
 function createAndSendDocument() {
   // Create a new Google Doc named 'Hello, world!'
   var doc = DocumentApp.create('Hello, world!');
@@ -140,624 +134,623 @@ function createAndSendDocument() {
   GmailApp.sendEmail(email, subject, body);
 }
         </pre>
-        <figcaption>
-          <strong>Listing 1</strong>: Beispiel Google Script: Spreadsheet
-          erstellen und Link per Mail senden <a href="#r7">[7]</a>
-        </figcaption>
-      </figure>
-    </section>
-    <section>
-      <h3>2.2. Datenschutz und -sicherheit</h3>
-      <p>
-        Bei solchen hohen Nutzerzahlen haben beide Anbieter eine große
-        Verantwortung bezüglich der Sicherheit der Daten. Dazu zählen natürlich
-        angemessene Datenschutzrichtlinien und Verschlüsselungstechniken, aber
-        auch die Ermutigung und Aufklärung des Anwenders den eigenen Account so
-        einbruchssicher wie möglich zu gestalten. Dies beginnt schon bei der
-        Registrierung, nämlich mit der Festlegung eines starken Passworts.
-      </p>
-      <p>
-        Beide Dienste weisen bei der Registrierung auf die Stärke des Passworts
-        mit Hilfe eines Farbbalkens hin. Die Einstufung erhöht sich je länger
-        die Eingabe wird und je mehr zwischen Groß- und Kleinschreibung, Zahlen
-        und Sonderzeichen variiert wird <a href="#r3">[3]</a>. Zusätzlich wird
-        von beiden die zweistufige Verifizierung stark empfohlen, bei der nicht
-        nur Username und Passwort, sondern ein zusätzlicher Pin ans Handy
-        gesendet wird, um sicherzustellen, dass es sich wirklich um den
-        bestimmten Nutzer handelt. Aber auch hier unterscheiden sich Google und
-        Dropbox in den Details der Umsetzung. Während Dropbox diesen Code
-        entweder per SMS verschickt oder über eine App generieren lässt
-        <a href="#r7">[7]</a>, bietet Google zusätzlich die Übermittlung per
-        Sprachanruf und die Variante der Backup-Codes an <a href="#r8">[8]</a>.
-        Letztere sind vor allem nützlich, wenn das Smartphone bzw. der Empfang
-        gerade nicht zur Hand ist.
-      </p>
-      <p>
-        Der nächste wichtige Sicherheitsaspekt ist die Übertragung der Daten.
-        Diese findet bei beiden selbstverständlich über SSL/TSL und HTTPS statt.
-        Danach findet die serverseitige Verschlüsselung über AES-256 bei Dropbox
-        <a href="#r7">[7]</a> und AES-128 bei Google
-        <a href="#r8">[8]</a> statt. Beide verschlüsseln die Daten jedoch mit
-        eigenen generierten Schlüsseln, was zu der Kritik führt, dass „[s]ince
-        Dropbox itself encrypts the data on the server-side, users cannot be
-        sure by cryptographic means that all stored data is highly confidential“
-        <a href="#r3">[3]</a>. Über Google ist die Kritik sogar noch lauter,
-        denn hier wird erst seit gut einem Jahr serverseitig verschlüsselt
-        <a href="#r1">[1]</a>. Zuvor wiesen Mitarbeiter des GoogleDrive Team nur
-        auf die sichere Kommunikation zwischen Server und Client hin bzw.
-        machten auf den Gebrauch der zwei-Schritt-Verifizierung aufmerksam
-        <a href="#r1">[1]</a>. Dass die Schlüssel jedoch selbst generiert und
-        verwaltet werden, sorgt auch hier für Unwohlsein <a href="#r1">[1]</a>.
-      </p>
-      <p>
-        Aus diesem Problem hat sich ein ganz eigener Markt entwickelt. Dropbox
-        selbst weist in ihrem Helpcenter auf „zahlreiche Drittanbieter“
-        <a href="#r7">[7]</a> hin, mit Hilfe welcher Anwender ihre Daten selber
-        verschlüsseln können, bevor sie diese in die Cloud hochladen. Auch
-        Borgmann et al. kommen zu dem Schluss, dass es „a whole range of
-        alternative methods“<a href="#r3">[3]</a> gibt, um die eigenen Daten
-        schon lokal zu verschlüsseln und selber die Schlüssel zu verwalten.
-        Einer dieser Anbieter ist Boxcryptor, 2011 gegründet und mit
-        mittlerweile über 1 Millionen Downloads oft genutzt
-        <a href="#r4">[4]</a>.
-      </p>
-      <p>
-        Boxcryptor ist eine Anwendung die speziell zur Verschlüsselung von
-        Daten, welche anschließend in der Cloud gespeichert werden sollen,
-        entwickelt wurde. Das Prinzip ist recht simpel. Die zu verschlüsselnden
-        Daten werden in einem entsprechenden Ordner auf einem virtuellen
-        Laufwerk abgelegt und dort mit Hilfe der AES-256 und RSA Algorithmen
-        verschlüsselt. Danach erst werden die Dateien in den Cloud Ordner
-        weitergegeben. Verschlüsselte Daten sind farblich markiert und leicht
-        von anderen, nicht verschlüsselten Daten, zu unterscheiden. Diese
-        Software ist kompatibel mit allen großen Cloud Dienst Anbietern und
-        allen Betriebssystemen. Auch für Android, iOS und Blackberry gibt es
-        Apps, sodass hier ebenfalls keine Einschränkung besteht
-        <a href="#r4">[4]</a>.
-      </p>
-    </section>
-    <section>
-      <h2>3. Alternativen</h2>
-      <h3>3.1. BitTorrent Sync</h3>
-      <p>
-        Neben zusätzlichen Verschlüsselungssoftwares, die mit Cloud Diensten
-        zusammen angewendet werden können, haben sich aber auch Dienste
-        entwickelt, die auf Serverspeicherung gänzlich verzichten, und dennoch
-        die gleichen Vorteile versprechen. Zwar noch in der Beta Phase, aber
-        trotzdem ein vielversprechendes Konzept, präsentiert beispielsweise
-        BitTorrent Sync. Hier werden Daten direkt zwischen Geräten
-        synchronisiert. Dazu müssen diese in dem entsprechenden Sync Ordner
-        abgelegt werden, woraufhin ein 20 Byte langer Geheimschlüssel generiert
-        wird. Über diesen Schlüssel können anschließend andere Geräte auf diese
-        Daten zugreifen. Dies ermöglicht ebenfalls das Teilen von Daten mit
-        Dritten. Mit Hilfe drei verschiedener Einstufungen der Geheimschlüssel,
-        auch <em>Secrets </em> genannt, ist es möglich, Berechtigungen
-        zuzuschreiben und sogar ein zeitliches Limit des Teilens zu setzen
-        <a href="#r2">[2]</a>.
-      </p>
-      <p>
-        Ein entscheidender Vorteil ist, dass durch dieses Prinzip keine
-        Einschränkung des zu verfügbaren Speicherplatzes seitens des Anbieters
-        stattfindet. Dieser richtet sich nach der eigenen Kapazität. Außerdem
-        entstehen keine Fragen bezüglich des Standortes der Server und damit
-        folgenden unterschiedlichen Datenschutzrichtlinien, da die Daten nur auf
-        den eigenen Geräten gespeichert werden. Gerade in Hinblick auf die
-        Abhörskandale der NSA und auch des BND stößt dies auf große
-        Begeisterung:
-      </p>
-      <p>
-        „That difference in design means that people using Bittorrent Sync don’t
-        have to worry about whether the cloud company hosting their data is
-        properly securing it against rogue employees or other threats. Forgoing
-        the cloud also means that data shared using Bittorrent Sync could be
-        harvested by the NSA or another agency only by going directly to the
-        person or company controlling the synced devices”<a href="#r11">[11]</a
-        >.
-      </p>
-      <p>
-        Die Kommunikation zwischen zwei Geräten ist über den AES-128 Algorithmus
-        verschlüsselt. Zudem wird das P2P Protocol verwendet. Trotz Beta Phase
-        erstreckt sich das Angebot der Desktop Version bereits über Windows, Mac
-        und Linux, und auch die Unterstützung mobiler Geräte deckt Android, iOS,
-        Windows Phone und den Kindle Fire ab <a href="#r2">[2]</a>.
-      </p>
-      <p>
-        Ein für diese Technik spezifischer Nachteil ist allerdings die
-        Voraussetzung, dass zur Synchronisation die entsprechenden Geräte
-        angeschaltet sein müssen<a href="#r11">[11]</a>. Sollte die Verbindung
-        zu einem Zeitpunkt der Übertragung abbrechen, wird diese jedoch an der
-        entsprechenden Stelle wieder fortgesetzt, sobald beide Geräte wieder
-        online sind<a href="#r6">[6]</a>.
-      </p>
-    </section>
-    <section>
-      <h3>3.2 ownCloud</h3>
-      <p>
-        Wer dennoch lieber eine Cloud zur Hand haben und trotzdem auf einen
-        kommerziellen Anbieter verzichten möchte, hat die Möglichkeit mit
-        ownCloud sich selber eine Cloud aufzusetzen. Zuerst vorgestellt in 2011,
-        erfreut sich diese Software heute recht großer Beliebtheit. Nach eigenen
-        Angaben nutzen mehr als 1,3 Millionen Anwender diesen Service
-        <a href="#r10">[10]</a>. Und tatsächlich finden sich zahlreiche
-        Anleitungen im Internet, wie man sich zu Hause mit Hilfe eines Raspberry
-        Pis und ownCloud selber eine Cloud basteln kann <a href="#r12">[12]</a>
-        <a href="#r9">[9]</a> <a href="#r5">[5]</a>.
-      </p>
-      <p>
-        Die Vorteile sind schnell zusammengefasst: Erstens orientiert sich die
-        Speicherkapazität, ebenso wie bei BitTorrent Sync, an den eigenen
-        Gegebenheiten. Der Vorteil gegenüber dem Konzept von BitTorrent Sync ist
-        allerdings, dass durch die Zwischenspeicherung der Daten, kein anderes
-        Gerät als das auf dem die Daten gewollt sind online sein muss. Vor allem
-        aber ist der Ort der gespeicherten Daten selbst bestimmt.
-      </p>
-      <p>
-        Jedoch ganz ohne Schattenseite ist auch diese Alternative nicht. Gewisse
-        Kenntnisse über Server, Netzwerke und Sicherheitsprotokolle sollten
-        vorhanden sein
-        <a href="#r5">[5]</a>. Zudem ist die Hochverfügbarkeit, wie sie bei
-        Dropbox oder Google herrscht, nicht gewährt.
-      </p>
-    </section>
-    <section>
-      <h2>4. Demo ownCloud</h2>
-      <h3>4.1. Das Set-Up</h3>
-      <p>
-        Die häufigste Empfehlung und einfachste Lösung für Privatpersonen ist
-        die Nutzung eines Raspberry Pis auf dem Raspbian installiert ist
-        <a href="#r12">[12]</a>. Bevor die eigentliche ownCloud installiert
-        werden kann, bedarf es noch einiger Konfigurationen, wie zum Beispiel
-        die Installation eines Apache Servers, PHP und SQL Datenbank
-        <a href="#r9">[9]</a>. Für das Erreichen der Cloud innerhalb des
-        Heimnetzwerks reicht dies schon, wenn man allerdings auch von außerhalb
-        an die Cloud gelangen möchte, empfiehlt sich die Registrierung bei einem
-        Dynamic DNS Dienst und die Installation dessen Clients zum regelmäßigen
-        aktualisieren der IP Adresse.
-      </p>
-      <p>
-        Anschließend kann die neuste Version von ownCloud heruntergeladen und
-        installiert werden. Während des Installationsprozesses hat man die
-        Möglichkeit entweder die IP des Raspberrys oder eine registrierte URL
-        einzugeben, über welche die ownCloud dann erreichbar ist. Dazu sollten
-        dann auch die Ports 80 und 443 im Router zur Weiterleitung freigegeben
-        sein<a href="#r9">[9]</a>.
-      </p>
-      <p>
-        Der nächste Schritt ist bezüglich Sicherheit. Um eine sichere Verbindung
-        über HTTPS zu haben, kann ein selbstsigniertes Zertifikat erzeugt
-        werden. Zwar erscheint dann beim Aufruf der Seite die Warnung, dass es
-        sich um keine vertrauenswürdige Verbindung handelt, jedoch ist der Grund
-        dafür ja die selbst ausgestellte Signatur. Durch Hinzufügen einer
-        Ausnahme für dieses Zertifikat und abspeichern im Browser ist dennoch
-        eine gewisse Kontrolle über die Verbindung gewährt. Sollte in Zukunft
-        beim Aufrufen der Seite diese Warnung wieder erscheinen, obwohl das
-        eigene Zertifikat gespeichert wurde, weiß man beispielsweise, dass
-        jemand Fremdes an dem Zertifikat Änderungen vorgenommen hat
-        <a href="#r5">[5]</a>.
-      </p>
-      <p>
-        Als letztes muss nun nur noch der Dynamic DNS Update Client installiert
-        und konfiguriert werden. Nach einem Neustart des Servers und einloggen
-        auf der eigenen ownCLoud über das Webinterface ist diese bereit zum
-        Nutzen. Es können weitere Apps eingebunden, eine Synchronisation mit
-        Adressbuch oder Kalender eingerichtet und das Aussehen angepasst werden
-        <a href="#r10">[10]</a>.
-      </p>
-    </section>
-    <section>
-      <h3>4.2. Funktionsbeispiele</h3>
+      <figcaption>
+        <strong>Listing 1</strong>: Beispiel Google Script: Spreadsheet
+        erstellen und Link per Mail senden <a href="#r7">[7]</a>
+      </figcaption>
+    </figure>
+  </section>
+  <section>
+    <h3>2.2. Datenschutz und -sicherheit</h3>
+    <p>
+      Bei solchen hohen Nutzerzahlen haben beide Anbieter eine große
+      Verantwortung bezüglich der Sicherheit der Daten. Dazu zählen natürlich
+      angemessene Datenschutzrichtlinien und Verschlüsselungstechniken, aber
+      auch die Ermutigung und Aufklärung des Anwenders den eigenen Account so
+      einbruchssicher wie möglich zu gestalten. Dies beginnt schon bei der
+      Registrierung, nämlich mit der Festlegung eines starken Passworts.
+    </p>
+    <p>
+      Beide Dienste weisen bei der Registrierung auf die Stärke des Passworts
+      mit Hilfe eines Farbbalkens hin. Die Einstufung erhöht sich je länger
+      die Eingabe wird und je mehr zwischen Groß- und Kleinschreibung, Zahlen
+      und Sonderzeichen variiert wird <a href="#r3">[3]</a>. Zusätzlich wird
+      von beiden die zweistufige Verifizierung stark empfohlen, bei der nicht
+      nur Username und Passwort, sondern ein zusätzlicher Pin ans Handy
+      gesendet wird, um sicherzustellen, dass es sich wirklich um den
+      bestimmten Nutzer handelt. Aber auch hier unterscheiden sich Google und
+      Dropbox in den Details der Umsetzung. Während Dropbox diesen Code
+      entweder per SMS verschickt oder über eine App generieren lässt
+      <a href="#r7">[7]</a>, bietet Google zusätzlich die Übermittlung per
+      Sprachanruf und die Variante der Backup-Codes an <a href="#r8">[8]</a>.
+      Letztere sind vor allem nützlich, wenn das Smartphone bzw. der Empfang
+      gerade nicht zur Hand ist.
+    </p>
+    <p>
+      Der nächste wichtige Sicherheitsaspekt ist die Übertragung der Daten.
+      Diese findet bei beiden selbstverständlich über SSL/TSL und HTTPS statt.
+      Danach findet die serverseitige Verschlüsselung über AES-256 bei Dropbox
+      <a href="#r7">[7]</a> und AES-128 bei Google
+      <a href="#r8">[8]</a> statt. Beide verschlüsseln die Daten jedoch mit
+      eigenen generierten Schlüsseln, was zu der Kritik führt, dass „[s]ince
+      Dropbox itself encrypts the data on the server-side, users cannot be
+      sure by cryptographic means that all stored data is highly confidential“
+      <a href="#r3">[3]</a>. Über Google ist die Kritik sogar noch lauter,
+      denn hier wird erst seit gut einem Jahr serverseitig verschlüsselt
+      <a href="#r1">[1]</a>. Zuvor wiesen Mitarbeiter des GoogleDrive Team nur
+      auf die sichere Kommunikation zwischen Server und Client hin bzw.
+      machten auf den Gebrauch der zwei-Schritt-Verifizierung aufmerksam
+      <a href="#r1">[1]</a>. Dass die Schlüssel jedoch selbst generiert und
+      verwaltet werden, sorgt auch hier für Unwohlsein <a href="#r1">[1]</a>.
+    </p>
+    <p>
+      Aus diesem Problem hat sich ein ganz eigener Markt entwickelt. Dropbox
+      selbst weist in ihrem Helpcenter auf „zahlreiche Drittanbieter“
+      <a href="#r7">[7]</a> hin, mit Hilfe welcher Anwender ihre Daten selber
+      verschlüsseln können, bevor sie diese in die Cloud hochladen. Auch
+      Borgmann et al. kommen zu dem Schluss, dass es „a whole range of
+      alternative methods“<a href="#r3">[3]</a> gibt, um die eigenen Daten
+      schon lokal zu verschlüsseln und selber die Schlüssel zu verwalten.
+      Einer dieser Anbieter ist Boxcryptor, 2011 gegründet und mit
+      mittlerweile über 1 Millionen Downloads oft genutzt
+      <a href="#r4">[4]</a>.
+    </p>
+    <p>
+      Boxcryptor ist eine Anwendung die speziell zur Verschlüsselung von
+      Daten, welche anschließend in der Cloud gespeichert werden sollen,
+      entwickelt wurde. Das Prinzip ist recht simpel. Die zu verschlüsselnden
+      Daten werden in einem entsprechenden Ordner auf einem virtuellen
+      Laufwerk abgelegt und dort mit Hilfe der AES-256 und RSA Algorithmen
+      verschlüsselt. Danach erst werden die Dateien in den Cloud Ordner
+      weitergegeben. Verschlüsselte Daten sind farblich markiert und leicht
+      von anderen, nicht verschlüsselten Daten, zu unterscheiden. Diese
+      Software ist kompatibel mit allen großen Cloud Dienst Anbietern und
+      allen Betriebssystemen. Auch für Android, iOS und Blackberry gibt es
+      Apps, sodass hier ebenfalls keine Einschränkung besteht
+      <a href="#r4">[4]</a>.
+    </p>
+  </section>
+  <section>
+    <h2>3. Alternativen</h2>
+    <h3>3.1. BitTorrent Sync</h3>
+    <p>
+      Neben zusätzlichen Verschlüsselungssoftwares, die mit Cloud Diensten
+      zusammen angewendet werden können, haben sich aber auch Dienste
+      entwickelt, die auf Serverspeicherung gänzlich verzichten, und dennoch
+      die gleichen Vorteile versprechen. Zwar noch in der Beta Phase, aber
+      trotzdem ein vielversprechendes Konzept, präsentiert beispielsweise
+      BitTorrent Sync. Hier werden Daten direkt zwischen Geräten
+      synchronisiert. Dazu müssen diese in dem entsprechenden Sync Ordner
+      abgelegt werden, woraufhin ein 20 Byte langer Geheimschlüssel generiert
+      wird. Über diesen Schlüssel können anschließend andere Geräte auf diese
+      Daten zugreifen. Dies ermöglicht ebenfalls das Teilen von Daten mit
+      Dritten. Mit Hilfe drei verschiedener Einstufungen der Geheimschlüssel,
+      auch <em>Secrets </em> genannt, ist es möglich, Berechtigungen
+      zuzuschreiben und sogar ein zeitliches Limit des Teilens zu setzen
+      <a href="#r2">[2]</a>.
+    </p>
+    <p>
+      Ein entscheidender Vorteil ist, dass durch dieses Prinzip keine
+      Einschränkung des zu verfügbaren Speicherplatzes seitens des Anbieters
+      stattfindet. Dieser richtet sich nach der eigenen Kapazität. Außerdem
+      entstehen keine Fragen bezüglich des Standortes der Server und damit
+      folgenden unterschiedlichen Datenschutzrichtlinien, da die Daten nur auf
+      den eigenen Geräten gespeichert werden. Gerade in Hinblick auf die
+      Abhörskandale der NSA und auch des BND stößt dies auf große
+      Begeisterung:
+    </p>
+    <p>
+      „That difference in design means that people using Bittorrent Sync don’t
+      have to worry about whether the cloud company hosting their data is
+      properly securing it against rogue employees or other threats. Forgoing
+      the cloud also means that data shared using Bittorrent Sync could be
+      harvested by the NSA or another agency only by going directly to the
+      person or company controlling the synced devices”<a href="#r11">[11]</a>.
+    </p>
+    <p>
+      Die Kommunikation zwischen zwei Geräten ist über den AES-128 Algorithmus
+      verschlüsselt. Zudem wird das P2P Protocol verwendet. Trotz Beta Phase
+      erstreckt sich das Angebot der Desktop Version bereits über Windows, Mac
+      und Linux, und auch die Unterstützung mobiler Geräte deckt Android, iOS,
+      Windows Phone und den Kindle Fire ab <a href="#r2">[2]</a>.
+    </p>
+    <p>
+      Ein für diese Technik spezifischer Nachteil ist allerdings die
+      Voraussetzung, dass zur Synchronisation die entsprechenden Geräte
+      angeschaltet sein müssen<a href="#r11">[11]</a>. Sollte die Verbindung
+      zu einem Zeitpunkt der Übertragung abbrechen, wird diese jedoch an der
+      entsprechenden Stelle wieder fortgesetzt, sobald beide Geräte wieder
+      online sind<a href="#r6">[6]</a>.
+    </p>
+  </section>
+  <section>
+    <h3>3.2 ownCloud</h3>
+    <p>
+      Wer dennoch lieber eine Cloud zur Hand haben und trotzdem auf einen
+      kommerziellen Anbieter verzichten möchte, hat die Möglichkeit mit
+      ownCloud sich selber eine Cloud aufzusetzen. Zuerst vorgestellt in 2011,
+      erfreut sich diese Software heute recht großer Beliebtheit. Nach eigenen
+      Angaben nutzen mehr als 1,3 Millionen Anwender diesen Service
+      <a href="#r10">[10]</a>. Und tatsächlich finden sich zahlreiche
+      Anleitungen im Internet, wie man sich zu Hause mit Hilfe eines Raspberry
+      Pis und ownCloud selber eine Cloud basteln kann <a href="#r12">[12]</a>
+      <a href="#r9">[9]</a> <a href="#r5">[5]</a>.
+    </p>
+    <p>
+      Die Vorteile sind schnell zusammengefasst: Erstens orientiert sich die
+      Speicherkapazität, ebenso wie bei BitTorrent Sync, an den eigenen
+      Gegebenheiten. Der Vorteil gegenüber dem Konzept von BitTorrent Sync ist
+      allerdings, dass durch die Zwischenspeicherung der Daten, kein anderes
+      Gerät als das auf dem die Daten gewollt sind online sein muss. Vor allem
+      aber ist der Ort der gespeicherten Daten selbst bestimmt.
+    </p>
+    <p>
+      Jedoch ganz ohne Schattenseite ist auch diese Alternative nicht. Gewisse
+      Kenntnisse über Server, Netzwerke und Sicherheitsprotokolle sollten
+      vorhanden sein
+      <a href="#r5">[5]</a>. Zudem ist die Hochverfügbarkeit, wie sie bei
+      Dropbox oder Google herrscht, nicht gewährt.
+    </p>
+  </section>
+  <section>
+    <h2>4. Demo ownCloud</h2>
+    <h3>4.1. Das Set-Up</h3>
+    <p>
+      Die häufigste Empfehlung und einfachste Lösung für Privatpersonen ist
+      die Nutzung eines Raspberry Pis auf dem Raspbian installiert ist
+      <a href="#r12">[12]</a>. Bevor die eigentliche ownCloud installiert
+      werden kann, bedarf es noch einiger Konfigurationen, wie zum Beispiel
+      die Installation eines Apache Servers, PHP und SQL Datenbank
+      <a href="#r9">[9]</a>. Für das Erreichen der Cloud innerhalb des
+      Heimnetzwerks reicht dies schon, wenn man allerdings auch von außerhalb
+      an die Cloud gelangen möchte, empfiehlt sich die Registrierung bei einem
+      Dynamic DNS Dienst und die Installation dessen Clients zum regelmäßigen
+      aktualisieren der IP Adresse.
+    </p>
+    <p>
+      Anschließend kann die neuste Version von ownCloud heruntergeladen und
+      installiert werden. Während des Installationsprozesses hat man die
+      Möglichkeit entweder die IP des Raspberrys oder eine registrierte URL
+      einzugeben, über welche die ownCloud dann erreichbar ist. Dazu sollten
+      dann auch die Ports 80 und 443 im Router zur Weiterleitung freigegeben
+      sein<a href="#r9">[9]</a>.
+    </p>
+    <p>
+      Der nächste Schritt ist bezüglich Sicherheit. Um eine sichere Verbindung
+      über HTTPS zu haben, kann ein selbstsigniertes Zertifikat erzeugt
+      werden. Zwar erscheint dann beim Aufruf der Seite die Warnung, dass es
+      sich um keine vertrauenswürdige Verbindung handelt, jedoch ist der Grund
+      dafür ja die selbst ausgestellte Signatur. Durch Hinzufügen einer
+      Ausnahme für dieses Zertifikat und abspeichern im Browser ist dennoch
+      eine gewisse Kontrolle über die Verbindung gewährt. Sollte in Zukunft
+      beim Aufrufen der Seite diese Warnung wieder erscheinen, obwohl das
+      eigene Zertifikat gespeichert wurde, weiß man beispielsweise, dass
+      jemand Fremdes an dem Zertifikat Änderungen vorgenommen hat
+      <a href="#r5">[5]</a>.
+    </p>
+    <p>
+      Als letztes muss nun nur noch der Dynamic DNS Update Client installiert
+      und konfiguriert werden. Nach einem Neustart des Servers und einloggen
+      auf der eigenen ownCLoud über das Webinterface ist diese bereit zum
+      Nutzen. Es können weitere Apps eingebunden, eine Synchronisation mit
+      Adressbuch oder Kalender eingerichtet und das Aussehen angepasst werden
+      <a href="#r10">[10]</a>.
+    </p>
+  </section>
+  <section>
+    <h3>4.2. Funktionsbeispiele</h3>
 
-      <p>
-        Ein sehr positiver Aspekt ist, dass man die eigene Cloud auch anderen
-        zugänglich machen kann. Der Admin kann Benutzer anlegen und diese
-        Gruppen sowie Rechte zuweisen (siehe Abb.1). Diese können ihre eigenen
-        Daten hochladen, verwalten, teilen und miteinander interagieren.
-      </p>
-      <figure>
-        <img src="benutzer.png" alt="Liste aller Benutzer" />
-        <figcaption>
-          <strong>Abbildung 1</strong>: Liste der eingetragenen Benutzer
-          <a href="#r13">[13]</a>.
-        </figcaption>
-      </figure>
-      <p>
-        Beim Teilen gibt es verschiedene Möglichkeiten dieses zu gestalten. Zum
-        einen können Dateien mit ganzen Gruppen oder einzelnen Personen geteilt
-        werden. Des Weiteren lassen sich Optionen wie „kann bearbeiten“,
-        „aktualisieren“, „löschen“ und „teilen“ auswählen. Auch das Setzen eines
-        Ablaufdatums ist möglich, sowie eine zusätzliche Mitteilung per Email
-        mit der Information, dass etwas mit einem geteilt wurde. Aber auch das
-        Teilen mit Dritten, die nicht zu den eingetragenen Benutzern gehören,
-        ist möglich. Hierfür orientiert sich ownCloud an Dropbox oder auch
-        Google, indem es den Link zum kopieren und weiterleiten gibt (siehe Abb
-        2).
-      </p>
-      <figure>
-        <img src="shareoptions.png" alt="Teilen" />
-        <figcaption>
-          <strong>Abbildung 2</strong>: Optionen beim Teilen von Daten
-          <a href="#r13">[13]</a>.
-        </figcaption>
-      </figure>
-      <p>
-        Gerade in Hinblick auf das Zusammenarbeiten und Teilen von Daten ist die
-        Übersicht der neusten Aktivitäten sehr nützlich. Hier werden alle
-        Aktivitäten, die einen selbst betreffen mit zusätzlichen Details
-        angezeigt (siehe Abb.3).
-      </p>
-      <figure>
-        <img src="activity_c.png" alt="Aktivitätsübersicht" />
-        <figcaption>
-          <strong>Abbildung 3</strong>: Übersicht der Aktivität
-          <a href="#r13">[13]</a>.
-        </figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2>5. Fazit</h2>
+    <p>
+      Ein sehr positiver Aspekt ist, dass man die eigene Cloud auch anderen
+      zugänglich machen kann. Der Admin kann Benutzer anlegen und diese
+      Gruppen sowie Rechte zuweisen (siehe Abb.1). Diese können ihre eigenen
+      Daten hochladen, verwalten, teilen und miteinander interagieren.
+    </p>
+    <figure>
+      <img src="benutzer.png" alt="Liste aller Benutzer" />
+      <figcaption>
+        <strong>Abbildung 1</strong>: Liste der eingetragenen Benutzer
+        <a href="#r13">[13]</a>.
+      </figcaption>
+    </figure>
+    <p>
+      Beim Teilen gibt es verschiedene Möglichkeiten dieses zu gestalten. Zum
+      einen können Dateien mit ganzen Gruppen oder einzelnen Personen geteilt
+      werden. Des Weiteren lassen sich Optionen wie „kann bearbeiten“,
+      „aktualisieren“, „löschen“ und „teilen“ auswählen. Auch das Setzen eines
+      Ablaufdatums ist möglich, sowie eine zusätzliche Mitteilung per Email
+      mit der Information, dass etwas mit einem geteilt wurde. Aber auch das
+      Teilen mit Dritten, die nicht zu den eingetragenen Benutzern gehören,
+      ist möglich. Hierfür orientiert sich ownCloud an Dropbox oder auch
+      Google, indem es den Link zum kopieren und weiterleiten gibt (siehe Abb
+      2).
+    </p>
+    <figure>
+      <img src="shareoptions.png" alt="Teilen" />
+      <figcaption>
+        <strong>Abbildung 2</strong>: Optionen beim Teilen von Daten
+        <a href="#r13">[13]</a>.
+      </figcaption>
+    </figure>
+    <p>
+      Gerade in Hinblick auf das Zusammenarbeiten und Teilen von Daten ist die
+      Übersicht der neusten Aktivitäten sehr nützlich. Hier werden alle
+      Aktivitäten, die einen selbst betreffen mit zusätzlichen Details
+      angezeigt (siehe Abb.3).
+    </p>
+    <figure>
+      <img src="activity_c.png" alt="Aktivitätsübersicht" />
+      <figcaption>
+        <strong>Abbildung 3</strong>: Übersicht der Aktivität
+        <a href="#r13">[13]</a>.
+      </figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>5. Fazit</h2>
 
+    <p>
+      Die Vorteile der Nutzung von Cloud Diensten liegt klar auf der Hand: Die
+      Daten sind unabhängig von Standort und Gerät immer abrufbar. Im Falle
+      eines Schadens an der Festplatte oder ähnlichem sind zudem diese Daten
+      nicht verloren. Auch vereinfacht es Projektarbeiten. Doch es gibt immer
+      zwei Seiten einer Medaille und so sollte sich jeder bewusst sein, dass
+      wenn man seine Daten, seien es persönliche, geschäftliche, belanglose
+      oder sensible Daten, online hochlädt und auf fremden Servern speichert,
+      die theoretische Möglichkeit besteht, dass jemand Fremdes sich leichter
+      und unter Umständen unbemerkt Zugriff zu diesen Daten beschaffen kann.
+    </p>
+    <p>
+      Große Anbieter wie Dropbox und Google versprechen viel Leistung, gerade
+      auch in Hinblick auf Sicherheit, aber so zeigte sich besonders im
+      letzten Jahr wie viel hinter den Kulissen geschieht, ausgehend von der
+      Politik und den Geheimdiensten, von dem Anwender nichts mitbekommen. Die
+      besten Verschlüsselungsalgorithmen bei der Übertragung von Daten oder
+      beim Ablegen der selbigen auf den Servern nützen nichts, wenn die
+      Schlüssel von den Firmen selbst verwaltet werden und sie auf Verlangen
+      der Regierung diese herausgeben müssen.
+    </p>
+    <p>
+      Eine Alternative ist sicher die zusätzliche lokale Verschlüsselung, so
+      wie sie Boxcryptor anbietet. Oder auch gänzlich auf das
+      Zwischenspeichern auf Servern zu verzichten und Daten direkt zu
+      Synchronisieren, so wie BitTorrent Sync es vorschlägt. Die Idee sich
+      seine eigene Cloud aufzusetzen erscheint im ersten Moment auch eine
+      interessante Alternative zu sein. Jedoch kann dieser Enthusiasmus
+      schnell verfliegen, denn die Herausforderung diese so sicher wie möglich
+      zu gestalten und den gleichen Service zu bieten wie die Vorbilder, ist
+      doch größer als anfänglich gedacht. Viel Freiheit in Gestaltung und
+      Umsetzung bedeutet in diesem Fall auch sehr viel Verantwortung, welche
+      nur mit Grundkenntnissen kaum erfüllbar ist.
+    </p>
+  </section>
+  <section>
+    <h2>1. Three Research Approaches</h2>
+    <p>
+      In this paper, we are going to go deeper into three research approaches:
+      quantitative, qualitative and mixed methods. Mostly, quantitative and
+      qualitative approaches are seen as opposite sides or distinct
+      categories. Instead, they represent different ends of a continuity so a
+      study can be more quantitative in some aspects than qualitative or the
+      other way. For some cases, a mixed method research is needed to
+      incorporate elements of both quantitative and qualitative. [todo page 41
+      first paragraph]
+    </p>
+    <p>
+      Traditionally, quantitative and qualitative research are differentiated
+      by the idea that quantitative research uses numbers instead of words
+      used by qualitative research or that quantitative research uses
+      closed-ended questions and qualitative research uses open-ended
+      questions. This is indeed true but a more complete way to see the
+      differences between these two approaches is to look at the types of
+      research strategies used(e.g, surveys, experiments, interviews),
+      philosophical assumptions brought by the researcher and the method or
+      tools used to conduct these approaches (e.g., instruments used to
+      collect quantitative data or observations used to collect qualitative
+      data). Quantitative research has dominated the research approaches from
+      the late 19th to mid-20th century. After that period of time, the
+      interest for qualitative research approaches increased, thus growing the
+      interest for mixed research methods. [todo page 41 second paragraph]
+    </p>
+  </section>
+  <section>
+    <h2>2 Quantitative Method</h2>
+    <h3>1.1 Introduction</h3>
+    <p>
+      Quantitative research approach uses objective theories and tests them by
+      analyzing different variables and the relationship between them. These
+      kinds of variables are measured using instruments so numerical data can
+      be collected and used to produce statistical results. The researcher in
+      this approach builds the research against the bias, eliminates or
+      controls new nuances of explanations and findings, and builds a research
+      that can be replicated and generalized. [todo page 41]
+    </p>
+    <p>
+      In a quantitative approach, the researcher avoids the variation during
+      the introduction of the topic since the objective is to what factors and
+      variables influence an outcome and not to generate new ideas or
+      solutions based on the participants perspective. For example,
+      quantitative research can be conducted to understand if the financial
+      issues contribute to a divorce. In this case, the variables and factors
+      help the research to understand and explain this particular problem. The
+      quantitative research introduction should not be written and affected by
+      the personal view of the researcher in order to support objectivity.
+      [todo page 162]
+    </p>
+    <h3>2.2 Quantitative Methodologies</h3>
+    <p>
+      The researcher, despite the fact that has to choose between the
+      quantitative, qualitative and mixed research approach, also decides on
+      what type of design to choose within these approaches. Research methodologies
+      are different kinds of inquiry that provide instructions and direction
+      for procedures to be followed in a study. These types of design have
+      grown dramatically over the years since the advances made in technology
+      and tools to collect and analyze complex data. [todo page 49]
+    </p>
+    <h4>2.2.1 Field experiments</h4>
+    <p>
+      Field experiments are conducted in actual environments. To test the effect, one or more factors must be isolated
+      and
+      changed. Although there are many more variables to take into account, it enables the researcher to witness more
+      natural behavior. This method is also frequently used in applied sciences like bioengineering and medicine as well
+      as sociology.
+      When contrasted to lab tests, field experiments provide a number of advantages. It provides a setting that is more
+      similar to nature than a lab. It is appropriate to examine large groups of people since they tend to be more
+      representative. On the other side, controlling variables is more complicated, making it very difficult to
+      reproduce the same conditions. Furthermore, because it is challenging to manage the environment, unforeseen events
+      may occur and have a negative impact on patients and participants. [todo papger page 380]
+    </p>
+    <h4>2.2.2 Surveys</h4>
+    <p>
+      A survey is a research method that enables the direct gathering of data from a participant in the study using a
+      series of questions arranged in a certain order. It is one of the most popular quantitative techniques because it
+      enables the gathering of data on a particular topic by asking questions that capture the attitudes, perceptions,
+      and actions of a group of people.
+      Surveys have a number of advantages. The high population representativeness and the method's inexpensive cost in
+      comparison to other options are two of its most significant advantages. On the other hand, the survey's design and
+      the respondents' accuracy of response depend greatly on the validity of the data. [todo paper page 381]
+    </p>
+    <h4>2.2.3 Correlation study</h4>
+    <p>
+      In essence, correlational research is an experimental technique used to examine if there is a correlation between
+      two or more variables. There is merely an examination of how closely the variables are related; there is no
+      manipulation of the variables. A correlational analysis emphasizes two characteristics: the relationship's
+      strength and direction. We can quickly quantify observational data by looking at the correlation coefficient. At
+      the same time, we can gather a variety of data from numerous domains at once and investigate the relationships
+      between those variables. The link between two variables could perhaps be explained by a third variable, hence
+      correlation does not imply causality. [todo paper page 381]
+    </p>
+  </section>
+  <section>
+    <h2>3. Qualitative Method</h2>
+    <h3>3.1 Introduction</h3>
+    <p>
+      Qualitative research approach is used for understanding the perspective
+      of individuals and their experience on a social problem and exploring a
+      topic for different nuances. The process of conducting this kind of
+      research approach involves data collected from participants in different
+      life situations and experience which is represented by the
+      interpretation of the researcher. The focus is on the individual meaning
+      rather than numbers and statistics. [todo page 41]
+    </p>
+    <p>
+      In a qualitative approach, the problem that the researcher describes can
+      be understood by exploring a topic and comprehending new variations
+      given by the participants. Qualitative research problem has some
+      characteristics: the topic has a lack of previous research and theory
+      which may be incorrect, inaccurate or biased; the topic needs to be
+      developed further; a quantitative approach is not suitable for this kind
+      of problem. In a qualitative approach, the researcher should rely on the
+      participant's perspective and may begin the introduction of the problem
+      with a personal opinion or experience from the researcher in order to
+      focus on the subjective point of view. [todo page 162]
+    </p>
+    <h3>3.2 Qualitative Methodologies</h3>
+    <p>
+      In qualitative approaches, the design types became more visible and
+      clear during the 1990s. The origins for these approaches come from
+      sociology, humanities, and evaluation. There are many methodologies and design types for qualitative research but
+      we will focus on observations, ethnography and structured interviews and show their strengths and weaknesses. [
+      todo page 50]
+    </p>
+    <h4>3.2.1 Observation</h4>
+    <p>
+      Researchers examine a specific phenomena in its natural setting as part
+      of a systematic method for gathering information called observation.
+      This approach is particularly recommended when a subject is largely
+      unknown and it is crucial to fully comprehend a phenomenon while
+      preserving the surrounding circumstances. Observation is a useful method
+      for gathering information concurrently with the occurrence of the event
+      without interfering with it. It is a discrete, highly adaptable strategy
+      that is focused on knowledge discovery. In some circumstances, such as
+      the study of human and animal behavior, trustworthy data collection is
+      the only option. On the other hand, it is a very time-consuming strategy
+      that needs advance planning and the researcher's availability to travel
+      to the location where the event occurs. Additionally, since the
+      researcher is the only one who interprets the data, the method is
+      extremely sensitive to the independence of the analysis. [todo paper
+      page 376]
+    </p>
+    <h4>3.2.2 Ethnography</h3>
       <p>
-        Die Vorteile der Nutzung von Cloud Diensten liegt klar auf der Hand: Die
-        Daten sind unabhängig von Standort und Gerät immer abrufbar. Im Falle
-        eines Schadens an der Festplatte oder ähnlichem sind zudem diese Daten
-        nicht verloren. Auch vereinfacht es Projektarbeiten. Doch es gibt immer
-        zwei Seiten einer Medaille und so sollte sich jeder bewusst sein, dass
-        wenn man seine Daten, seien es persönliche, geschäftliche, belanglose
-        oder sensible Daten, online hochlädt und auf fremden Servern speichert,
-        die theoretische Möglichkeit besteht, dass jemand Fremdes sich leichter
-        und unter Umständen unbemerkt Zugriff zu diesen Daten beschaffen kann.
-      </p>
-      <p>
-        Große Anbieter wie Dropbox und Google versprechen viel Leistung, gerade
-        auch in Hinblick auf Sicherheit, aber so zeigte sich besonders im
-        letzten Jahr wie viel hinter den Kulissen geschieht, ausgehend von der
-        Politik und den Geheimdiensten, von dem Anwender nichts mitbekommen. Die
-        besten Verschlüsselungsalgorithmen bei der Übertragung von Daten oder
-        beim Ablegen der selbigen auf den Servern nützen nichts, wenn die
-        Schlüssel von den Firmen selbst verwaltet werden und sie auf Verlangen
-        der Regierung diese herausgeben müssen.
-      </p>
-      <p>
-        Eine Alternative ist sicher die zusätzliche lokale Verschlüsselung, so
-        wie sie Boxcryptor anbietet. Oder auch gänzlich auf das
-        Zwischenspeichern auf Servern zu verzichten und Daten direkt zu
-        Synchronisieren, so wie BitTorrent Sync es vorschlägt. Die Idee sich
-        seine eigene Cloud aufzusetzen erscheint im ersten Moment auch eine
-        interessante Alternative zu sein. Jedoch kann dieser Enthusiasmus
-        schnell verfliegen, denn die Herausforderung diese so sicher wie möglich
-        zu gestalten und den gleichen Service zu bieten wie die Vorbilder, ist
-        doch größer als anfänglich gedacht. Viel Freiheit in Gestaltung und
-        Umsetzung bedeutet in diesem Fall auch sehr viel Verantwortung, welche
-        nur mit Grundkenntnissen kaum erfüllbar ist.
-      </p>
-    </section>
-    <section>
-      <h2>1. Three Research Approaches</h2>
-      <p>
-        In this paper, we are going to go deeper into three research approaches:
-        quantitative, qualitative and mixed methods. Mostly, quantitative and
-        qualitative approaches are seen as opposite sides or distinct
-        categories. Instead, they represent different ends of a continuity so a
-        study can be more quantitative in some aspects than qualitative or the
-        other way. For some cases, a mixed method research is needed to
-        incorporate elements of both quantitative and qualitative. [todo page 41
-        first paragraph]
-      </p>
-      <p>
-        Traditionally, quantitative and qualitative research are differentiated
-        by the idea that quantitative research uses numbers instead of words
-        used by qualitative research or that quantitative research uses
-        closed-ended questions and qualitative research uses open-ended
-        questions. This is indeed true but a more complete way to see the
-        differences between these two approaches is to look at the types of
-        research strategies used(e.g, surveys, experiments, interviews),
-        philosophical assumptions brought by the researcher and the method or
-        tools used to conduct these approaches (e.g., instruments used to
-        collect quantitative data or observations used to collect qualitative
-        data). Quantitative research has dominated the research approaches from
-        the late 19th to mid-20th century. After that period of time, the
-        interest for qualitative research approaches increased, thus growing the
-        interest for mixed research methods. [todo page 41 second paragraph]
-      </p>
-    </section>
-    <section>
-      <h2>2 Quantitative Method</h2>
-      <h3>1.1 Introduction</h3>
-      <p>
-        Quantitative research approach uses objective theories and tests them by
-        analyzing different variables and the relationship between them. These
-        kinds of variables are measured using instruments so numerical data can
-        be collected and used to produce statistical results. The researcher in
-        this approach builds the research against the bias, eliminates or
-        controls new nuances of explanations and findings, and builds a research
-        that can be replicated and generalized. [todo page 41]
-      </p>
-      <p>
-        In a quantitative approach, the researcher avoids the variation during
-        the introduction of the topic since the objective is to what factors and
-        variables influence an outcome and not to generate new ideas or
-        solutions based on the participants perspective. For example,
-        quantitative research can be conducted to understand if the financial
-        issues contribute to a divorce. In this case, the variables and factors
-        help the research to understand and explain this particular problem. The
-        quantitative research introduction should not be written and affected by
-        the personal view of the researcher in order to support objectivity.
-        [todo page 162]
-      </p>
-      <h3>2.2 Quantitative Design</h3>
-      <p>
-        The researcher, despite the fact that has to choose between the
-        quantitative, qualitative and mixed research approach, also decides on
-        what type of design to choose within these approaches. Research designs
-        are different kinds of inquiry that provide instructions and direction
-        for procedures to be followed in a study. These types of design have
-        grown dramatically over the years since the advances made in technology
-        and tools to collect and analyze complex data. [todo page 49]
-      </p>
-      <p>
-        Quantitative designs include experiments and quasi-experiments which are
-        less exact experiments. A type of experiment design is applied
-        behavioral analysis or single-subject experiments where a single
-        individual or a small number of individuals are part of an experiment
-        that is administered over time. Causal-comparative research is a type of
-        nonexperimental quantitative research design where the researcher
-        compares groups of individuals in terms of variables that have changed.
-        Correlation design is also another nonexperimental design where the
-        researcher describes and measures the relation between two variables
-        using correlation statistics. [todo page 49]
-      </p>
-      <p>
-        Survey research design allows us to provide numerical data that
-        describes attitudes, opinions or trends of a population from a common
-        problem by studying a sample of different sizes of that population.
-        [todo page 49]
-      </p>
-      <p>
-        Experimental research is also another quantitative design that describes
-        if a specific manipulation of some variables will influence an outcome.
-        Experimental research includes quasi-experiments which use non-random
-        assignment of participants to these treatments and true experiments
-        which use random assignment. [todo page 50]
-      </p>
-      <h3>2.3 Surveys</h3>
-      <p>aaa</p>
-      <h3>2.4 Experiments</h3>
-      <p>aaa</p>
-      <h3>2.5 Advantages and Disadvantages</h3>
-      <p>aaa</p>
-    </section>
-    <section>
-      <h2>3. Qualitative Method</h2>
-      <h3>3.1 Introduction</h3>
-      <p>
-        Qualitative research approach is used for understanding the perspective
-        of individuals and their experience on a social problem and exploring a
-        topic for different nuances. The process of conducting this kind of
-        research approach involves data collected from participants in different
-        life situations and experience which is represented by the
-        interpretation of the researcher. The focus is on the individual meaning
-        rather than numbers and statistics. [todo page 41]
-      </p>
-      <p>
-        In a qualitative approach, the problem that the researcher describes can
-        be understood by exploring a topic and comprehending new variations
-        given by the participants. Qualitative research problem has some
-        characteristics: the topic has a lack of previous research and theory
-        which may be incorrect, inaccurate or biased; the topic needs to be
-        developed further; a quantitative approach is not suitable for this kind
-        of problem. In a qualitative approach, the researcher should rely on the
-        participant's perspective and may begin the introduction of the problem
-        with a personal opinion or experience from the researcher in order to
-        focus on the subjective point of view. [todo page 162]
-      </p>
-      <h3>3.2 Qualitative Design</h3>
-      <p>
-        In qualitative approaches, the design types became more visible and
-        clear during the 1990s. The origins for these approaches come from
-        sociology, humanities, and evaluation. [ todo page 50]
-      </p>
-      <p>
-        Narrative research is a design type where the researcher studies and
-        investigates the individuals experiences and asks them to tell their
-        life stories. After the stories are collected, the researcher has to
-        fully understand and retell them. This allows the researcher to combine
-        different views from his life and the individual's life in some sort of
-        collaborative narrative.[ todo page 50]
-      </p>
-      <p>
-        Phenomenological design type comes from psychology and philosophy where
-        the author narrates the lived experiences of participants about a
-        specific phenomenon which is told by them. The objective of this design
-        is the essence of these experiences for a group of participants that
-        have experienced the same situation. Since this design is based on
-        philosophy and psychology, the researcher has to conduct interviews to
-        fully understand and get involved into the individual’s experience.[
-        todo page 50]
-      </p>
-      <p>
-        Grounded theory comes from sociology where the researcher uses a general
-        theory to generate new ideas or theories based on the views of
-        participants. This design type includes multiple stages of collecting
-        data and processing.[ todo page 50]
-      </p>
-      <p>
-        Ethnography is another qualitative design type that comes from sociology
-        and anthropology where the researcher studies different patterns of
-        language, actions and behaviors of a whole cultural group in their
-        natural environment and situation for a long period of time. To collect
-        data, interviews and observations are needed.[ todo page 50]
-      </p>
-      <p>
-        Case studies are a design type where the researcher conducts a detailed
-        analysis of an event, program, activity, case, proces or individuals.
-        Since a case study is detailed, the researcher collects data over a
-        sustained period of time. [todo page 51]
-      </p>
-      <h3>3.3 Researcher Role</h3>
-      <p>aaa</p>
-      <h3>3.4 Data Collection Procedures</h3>
-      <p>aaa</p>
-      <h3>3.5 Advantages and Disadvantages</h3>
-      <p>aaa</p>
-    </section>
-    <section>
-      <h2>4. Mixed Method</h2>
-      <h3>4.1 Introduction</h3>
-      <p>
-        Mixed method research approach is used to investigate topics that need
-        to collect both qualitative and quantitative data and to integrate these
-        data to come to fully described conclusions supported by both types of
-        data. The main objective of this approach is to give additional insight
-        for a topic that cannot be given by either quantitative or qualitative
-        data alone. [todo page 41-42]
+        In ethnography, people are interviewed after being observed in a
+        circumstance. In an ethnographic study, the researcher makes an effort
+        to understand the scenario being observed from the participants' points
+        of view. There are two fundamental elements of ethnography: (i) the
+        observation occurs in a natural context, and (ii) researchers must
+        comprehend how an event is experienced and processed by members of a
+        speech community. The methodologies of observation and ethnography are
+        extremely similar. However, when doing an ethnographic study, the
+        researcher must adopt a more comprehensive perspective and pay close
+        attention to every detail.[todo paper
+        page 376]
       </p>
       <p>
-        In order to write the introduction for a mixed method study, the
-        researcher can either put an emphasis on the quantitative or qualitative
-        approach and maybe some combination of both. This emphasis will be shown
-        in the introduction of the study. For studies that need to have an equal
-        emphasis on quantitative and qualitative, there is a necessity to
-        understand the topic in both quantitative and qualitative data in order
-        to show the relationship between variables and explore the topic in
-        detail. A mixed method approach can be primarily quantitative or
-        qualitative when there is a need to make the study more diverse in terms
-        of methodologies and to be more inclusive. For example, a primarily
-        quantitative research may need to explain the relationship between
-        smoking behavior and depression and then dive deep into the detailed
-        views and perspectives of these participants. [todo page 163]
+        The main benefit of ethnography is that it allows the researcher to gain
+        a thorough understanding of the issue under study. However, ethnography
+        involves a significant time commitment from the researcher, and because
+        the study's findings can be so varied, it can be challenging to draw
+        accurate and focused conclusions.
       </p>
-      <h3>4.2 Mixed Method Design</h3>
+      <h4>3.2.3 Structured Interviews</h4>
       <p>
-        Mixed methods combine quantitative and qualitative research and the data
-        collected from both of them. Quantitative data contain close-ended
-        responses from participants found on questionnaires and surveys while
-        qualitative data contains open-ended responses which can result in
-        different nuances of the topic. Both of these methods have their
-        weaknesses and bias so the collection of them will result in
-        neutralizing these weaknesses by supporting each other. Some of the best
-        ways to use these two types of data are: (a) the validity of a database
-        can be checked or verified by the other database; (b) one database can
-        explain the findings of the other database; (c) one database can use the
-        other database and build on that.[todo page 51]
+        Structured interviews are a type of assessment tool used to collect and compare interviewee replies. The
+        interviewee
+        is questioned about prior encounters and/or suggested fictitious settings. All interviewees go through the same
+        procedure. High response rates are normal for structured interviews, and the interviewer is present to explain
+        the
+        question to prevent respondents from misinterpreting it. A systematic interview might take time to prepare,
+        though.
+        Additionally, even if during the interview new lines of study sound fascinating to pursue, they do not have the
+        same
+        flexibility in the choice of the responses that are predefined and cannot be changed by the researcher.[todo
+        paper
+        page 377]
       </p>
-      <p>
-        Convergent mixed methods is a design type where the researcher collects
-        both forms of data at the same time and merges the information to
-        analyze it and interpret it as a whole. If there is any contradiction or
-        conflict while integrating the data, they are explained by the
-        researcher.[todo page 52]
-      </p>
-      <p>
-        Explanatory sequential mixed methods is a design type in which the
-        researcher conducts the quantitative session and then the qualitative
-        one. The quantitative data are analyzed and the findings are explained
-        by the qualitative responses. This design is explanatory because the
-        quantitative data are explained by qualitative data and it is called
-        sequential because the two types of research are conducted one after the
-        other. This design is used mostly in topics with a strong quantitative
-        direction where the quantitative results need to be further explored by
-        qualitative data.[todo page 52]
-      </p>
-      <p>
-        Exploratory sequential mixed methods is the opposite of the explanatory.
-        The qualitative research is conducted first in order to get the
-        participants' views and analyze them. With this information, the
-        researcher can choose the perfect instrument to conduct the quantitative
-        part. The analyzed data allows the researcher to check for appropriate
-        instruments and find the variables that need to go into the quantitative
-        session.[todo page 52]
-      </p>
-      <h3>4.3 Types of Mixed Method Methods</h3>
-      <p>aaa</p>
-      <h3>4.4 Advantages and Disadvantages</h3>
-      <p>aaa</p>
-    </section>
-    <section class="references">
-      <h2>6. Literaturverzeichnis</h2>
-      <p class="reference" id="r1">
-        [1] Barth, Dave (2013, August 13). Google Cloud Storage now provides
-        server-side encryption [Online]. Available:
-        <a
-          href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html"
-          >http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a
-        >
-        (28.06.2014)
-      </p>
-      <p class="reference" id="r2">
-        [2] BitTorrent Sync [Online]. Available:
-        <a href="http://www.bittorentsync.com">http://www.bittorentsync.com</a>
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r3">
-        [3] Borgmann, Moritz et al. "On the Security of Cloud Storage".
-        Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports.
-        SIT-TR-2012-001. March 2012
-      </p>
-      <p class="reference" id="r4">
-        [4] Boxcryptor [Online]. Available:
-        <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a>
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r5">
-        [5] Connect.de. So Installieren Sie ownCloud auf einem Raspberry Pi
-        [Online]. Available
-        <a
-          href="http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html"
-          >http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html</a
-        >
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r6">
-        [6] Donauer, Jürgen (2013, December 18). Die Cloud Alternative für
-        Linux: Bittorrent Sync [Online]. Available:
-        <a
-          href="http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html"
-          >http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html</a
-        >
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r7">
-        [7] Dropbox [Online]. Available:
-        <a href="http://www.driobox.com">http://www.dropbox.com</a> (29.06.2014)
-      </p>
-      <p class="reference" id="r8">
-        [8] Google Drive [Online]. Available:
-        <a href="http://www.drive.google.com">http://drive.google.com</a>
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r9">
-        [9] H., Muhamed (2014, January). Raspberry Pi - ownCloud installieren
-        Anleitung [Online]. Available:
-        <a
-          href="http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html"
-          >http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html</a
-        >
-        (02.07.2014)
-      </p>
-      <p class="reference" id="r10">
-        [10] ownCloud [Online]. Available:
-        <a href="http://www.owncloud.org">http://www.owncloud.org</a>
-        (01.07.2014)
-      </p>
-      <p class="reference" id="r11">
-        [11] Simonite, Tom (2014, January 17). Sync Your Files without Trusting
-        the Cloud [Online]. Available
-        <a
-          href="http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/"
-          >http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/</a
-        >
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r12">
-        [12] Thoma, Jörg (2014, April 15). OwnCloud - Dropbox Alternative fürs
-        Heimnetzwerk [Online]. Available
-        <a
-          href="http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html"
-          >http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html</a
-        >
-        (29.06.2014)
-      </p>
-      <p class="reference" id="r13">[13] eigene aufgesetzte ownCloud</p>
-    </section>
-  </body>
+  </section>
+  <section>
+    <h2>4. Mixed Method</h2>
+    <h3>4.1 Introduction</h3>
+    <p>
+      Mixed method research approach is used to investigate topics that need
+      to collect both qualitative and quantitative data and to integrate these
+      data to come to fully described conclusions supported by both types of
+      data. The main objective of this approach is to give additional insight
+      for a topic that cannot be given by either quantitative or qualitative
+      data alone. [todo page 41-42]
+    </p>
+    <p>
+      In order to write the introduction for a mixed method study, the
+      researcher can either put an emphasis on the quantitative or qualitative
+      approach and maybe some combination of both. This emphasis will be shown
+      in the introduction of the study. For studies that need to have an equal
+      emphasis on quantitative and qualitative, there is a necessity to
+      understand the topic in both quantitative and qualitative data in order
+      to show the relationship between variables and explore the topic in
+      detail. A mixed method approach can be primarily quantitative or
+      qualitative when there is a need to make the study more diverse in terms
+      of methodologies and to be more inclusive. For example, a primarily
+      quantitative research may need to explain the relationship between
+      smoking behavior and depression and then dive deep into the detailed
+      views and perspectives of these participants. [todo page 163]
+    </p>
+    <h3>4.2 Mixed Method Methodologies</h3>
+    <p>
+      Mixed methods combine quantitative and qualitative research and the data
+      collected from both of them. Quantitative data contain close-ended
+      responses from participants found on questionnaires and surveys while
+      qualitative data contains open-ended responses which can result in
+      different nuances of the topic. Both of these methods have their
+      weaknesses and bias so the collection of them will result in
+      neutralizing these weaknesses by supporting each other. Some of the best
+      ways to use these two types of data are: (a) the validity of a database
+      can be checked or verified by the other database; (b) one database can
+      explain the findings of the other database; (c) one database can use the
+      other database and build on that.[todo page 51]
+    </p>
+    <p>
+      Convergent mixed methods is a design type where the researcher collects
+      both forms of data at the same time and merges the information to
+      analyze it and interpret it as a whole. If there is any contradiction or
+      conflict while integrating the data, they are explained by the
+      researcher.[todo page 52]
+    </p>
+    <p>
+      Explanatory sequential mixed methods is a design type in which the
+      researcher conducts the quantitative session and then the qualitative
+      one. The quantitative data are analyzed and the findings are explained
+      by the qualitative responses. This design is explanatory because the
+      quantitative data are explained by qualitative data and it is called
+      sequential because the two types of research are conducted one after the
+      other. This design is used mostly in topics with a strong quantitative
+      direction where the quantitative results need to be further explored by
+      qualitative data.[todo page 52]
+    </p>
+    <p>
+      Exploratory sequential mixed methods is the opposite of the explanatory.
+      The qualitative research is conducted first in order to get the
+      participants' views and analyze them. With this information, the
+      researcher can choose the perfect instrument to conduct the quantitative
+      part. The analyzed data allows the researcher to check for appropriate
+      instruments and find the variables that need to go into the quantitative
+      session.[todo page 52]
+    </p>
+  </section>
+  <section class="references">
+    <h2>6. Literaturverzeichnis</h2>
+    <p class="reference" id="r1">
+      [1] Barth, Dave (2013, August 13). Google Cloud Storage now provides
+      server-side encryption [Online]. Available:
+      <a
+        href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html">http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a>
+      (28.06.2014)
+    </p>
+    <p class="reference" id="r2">
+      [2] BitTorrent Sync [Online]. Available:
+      <a href="http://www.bittorentsync.com">http://www.bittorentsync.com</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r3">
+      [3] Borgmann, Moritz et al. "On the Security of Cloud Storage".
+      Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports.
+      SIT-TR-2012-001. March 2012
+    </p>
+    <p class="reference" id="r4">
+      [4] Boxcryptor [Online]. Available:
+      <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r5">
+      [5] Connect.de. So Installieren Sie ownCloud auf einem Raspberry Pi
+      [Online]. Available
+      <a
+        href="http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html">http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r6">
+      [6] Donauer, Jürgen (2013, December 18). Die Cloud Alternative für
+      Linux: Bittorrent Sync [Online]. Available:
+      <a
+        href="http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html">http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r7">
+      [7] Dropbox [Online]. Available:
+      <a href="http://www.driobox.com">http://www.dropbox.com</a> (29.06.2014)
+    </p>
+    <p class="reference" id="r8">
+      [8] Google Drive [Online]. Available:
+      <a href="http://www.drive.google.com">http://drive.google.com</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r9">
+      [9] H., Muhamed (2014, January). Raspberry Pi - ownCloud installieren
+      Anleitung [Online]. Available:
+      <a
+        href="http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html">http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html</a>
+      (02.07.2014)
+    </p>
+    <p class="reference" id="r10">
+      [10] ownCloud [Online]. Available:
+      <a href="http://www.owncloud.org">http://www.owncloud.org</a>
+      (01.07.2014)
+    </p>
+    <p class="reference" id="r11">
+      [11] Simonite, Tom (2014, January 17). Sync Your Files without Trusting
+      the Cloud [Online]. Available
+      <a
+        href="http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/">http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r12">
+      [12] Thoma, Jörg (2014, April 15). OwnCloud - Dropbox Alternative fürs
+      Heimnetzwerk [Online]. Available
+      <a
+        href="http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html">http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html</a>
+      (29.06.2014)
+    </p>
+    <p class="reference" id="r13">[13] eigene aufgesetzte ownCloud</p>
+  </section>
+</body>
+
 </html>
