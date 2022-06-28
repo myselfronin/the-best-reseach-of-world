@@ -39,7 +39,7 @@
       Along with the intricacy of software, the optimization of software phenomena or even finding effective ones has
       become a challenging task. Nevertheless, it is crucial for companies or organizations to continuously improve 
       their software process in order to deliver high-quality software within a specified timeframe, budget, and with 
-      available resources. Hence, it is obligatory for companies or organizations to continuously improve their software 
+      available resources. It is obligatory for companies or organizations to continuously improve their software 
       phenomena in order to deliver high-quality software within a specified timeframe, budget, and with available 
       resources. Thus, a systematic and disciplined approach to improving the software phenomena is needed.
     <p>
@@ -48,95 +48,96 @@
       qualitative, and mixed methods have been discussed. Also, it presents the findings of performing surveys and interviews 
       for evaluation of the code review process.
     </p>
-    <h3>1.1. Research Methods in Software Engineering</h3>
-    <p>For evaluation in software engineering there are different methods. Glass summarized the methods in four categories from his paper published in 1994. These are :</p>
   </section>
   <section>
     <h2>2. Empirical Software Engineering Evaluation</h2>
-    <h3>2.1. Allgemeiner Überblick</h3>
-
+    <h3>2.1 Overview</h3>
     <p>
-      Die Attraktivität, Daten in der Cloud zu speichern, ergibt sich in der
-      Regel aus mindestens einer der folgenden Funktionsmöglichkeiten.
-      Grundlegende Idee ist die Möglichkeit eine Kopie einer lokal
-      gespeicherten Datei zu erstellen und durch Speichern in der Cloud diese
-      Datei von überall abrufen zu können. Wenn dieser Zugriff nun von
-      mehreren Geräten aus geschieht, ergibt sich daraus die Notwendigkeit der
-      Synchronisation von solchen Daten, sodass diese immer auf dem
-      aktuellsten Stand sind. Des Weiteren ist das Teilen von Daten und die
-      variable Rechtevergabe eine wichtige Cloud-Funktion. Auch hier wird
-      wieder die Synchronisation zu einem wichtigen Thema, vor allem wenn es
-      um Team- oder Projektarbeiten geht. Zu guter Letzt wird gerne auf die
-      Option des Backups zurückgegriffen. Hier werden über einen längeren
-      Zeitraum immer wieder Kopien von Dateien erstellt, welche dann die
-      verschiedenen Versionen innerhalb eines Entwicklungsprozesses darstellen
-      und die Möglichkeit zur Wiederherstellung älterer Versionen bieten
-      <a href="#r3">[3]</a>.
+      Scientific methods should be used to influence software development. Glass[1], in his paper published in 1994, 
+      has summarized four methods for research in the field of software engineering as given below.
+    </p>
+    <table cellspacing="0" cellpadding="0" style="padding: 0px 25px">
+      <tr>
+        <td>
+          Scientific Method:
+        </td>
+        <td>The world is observed based on which a model is built.</td>
+      </tr>
+      <tr>
+        <td>
+          Engineering Method:
+        </td>
+        <td>Current solutions are studied and changes are proposed and then evaluated.</td>
+      </tr>
+      <tr>
+        <td>
+          Analytical Method:
+        </td>
+        <td>Formal theory is proposed and compared with empirical observation.</td>
+      </tr>
+      <tr>
+        <td>
+          Empirical Method:
+        </td>
+        <td>A model is propsed and evaluted empirically.</td>
+      </tr>
+    </table>
+    <p>
+      Although other methods are also necessary for software engineering, the focus of the paper is on using empirical 
+      strategies. Software engineering is driven by the professionals involved in software development. In order to 
+      evaluate the software phenomena, there needs a study on how software practitioners solve software problems ie 
+      discover their instincts or experience on the topic under discussion. The software phenomena can be processes, 
+      tools, techniques, policies, practices, and so on, used for developing software. Evaluating such phenomena using 
+      empirical strategies can be termed Empirical Evaluation in Software Engineering.
+    </p>
+    <h3>2.2 Empirical Strategies</h3>
+    <p>
+      Exploratory and Explanatory are two paradigms in empirical studies [2].  Exploratory is concerned with understanding 
+      the point of view and discovering the notices of the subject. The subject would mean the person participating in the 
+      empirical studies for evaluating an object. These are informed by the qualitative data. On the other hand, 
+      Explanatory is concerned with comparing two or more groups to identify cause-effect relationships. As this is informed 
+      by quantitative data, one can perform comparison and statistical analysis on them. Both quantitative and qualitative 
+      research investigations can be implemented on the same topic. 
     </p>
     <p>
-      Einer der bekanntesten Anbieter und mit über 300 Millionen registrierten
-      Nutzern <a href="#r7">[7]</a> ist Dropbox. Als dieser Dienst 2008 online
-      ging, stand zuerst die einfache Verwaltung von Daten unabhängig vom
-      persönlichen Standort im Vordergrund <a href="#r7">[7]</a>. Mittlerweile
-      wurden weitere Funktionen hinzugefügt. Als kostenloser Speicher stehen
-      2GB zur Verfügung, mit der zusätzlichen Option zur Erweiterung auf bis
-      zu 16GB. Außerdem beinhaltet das Leistungsspektrum die Möglichkeit
-      Dateien und Ordner zu teilen, Offline zu bearbeiten und ältere Versionen
-      wiederherzustellen. Es gibt mehrere Wege, diese Optionen zu nutzen.
-      Angefangen über ein leicht bedienbares Webinterface im Browser gibt es
-      außerdem Clients für Windows, MacOS und Linux. Für Smartphone und Tablet
-      stehen außerdem Apps für die Betriebssysteme Blackberry, iOs und Android
-      zur Verfügung <a href="#r7">[7]</a>.
+      The survey, case study, and experiment are the major types of strategies, depending upon the purpose of the evaluation, 
+      whether it is techniques, methods, or tools, and depending on the conditions for the empirical investigation. 
+      Depending on the purpose of evaluation, may that be for techniques, methods, or tools, and also depending on 
+      conditions for empirical investigations, there are three major strategies [114].
     </p>
+    <h4>2.2.1 Survey</h4>
     <p>
-      Als einer der Marktführer bei Internetdienstleistungen bietet Google.Inc
-      ebenfalls einen Cloud Service an. Dieser entwickelte sich aus der
-      Anwendung GoogleDocs und ging 2012 online. Laut eigenen Angaben benutzen
-      über 190 Millionen Anwender diesen bereitgestellten und in die Vielzahl
-      von eigenen Anwendungen integrierten Service <a href="#r8">[8]</a>. Der
-      kostenfreie Speicherplatz ist um einiges größer als der von Dropbox,
-      nämlich 15GB. Neben den bereits erläuterten Standardfunktionen wie
-      Synchronisation und Offline Bearbeitung gibt es zusätzlich beim Teilen
-      die Möglichkeit die Rechte der Dritten zu definieren. Außerdem wird
-      durch die Integration der anderen Google Dienste, wie beispielsweise
-      Gmail, Google+ oder Picasa Webalben, das Speichern bestimmter Daten in
-      der Cloud vereinfacht. So kann zum Beispiel ein Dokument im Anhang einer
-      Email direkt in GoogleDrive abgelegt werden <a href="#r8">[8]</a>. Die
-      Nutzung des Dienstes ist auch hier sowohl über den Browser, als auch
-      über Clients für alle PC Betriebssysteme oder Apps für mobile Geräte
-      möglich.
+      A survey is one of the best-known methods of collecting data from a large number of target people. It is generally 
+      used for investing already in used tools or techniques and aims to generalize the findings. This empirical method 
+      can be used to collect both qualitative and quantitative data and derive explanatory and exploratory conclusions. 
+      Interviews and questionnaires are the primary means of collecting data.[wholin book]
     </p>
-    <figure>
-      <pre>
-function createAndSendDocument() {
-  // Create a new Google Doc named 'Hello, world!'
-  var doc = DocumentApp.create('Hello, world!');
-
-  // Access the body of the document, then add a paragraph.
-  doc.getBody().appendParagraph('This document was created ');
-
-  // Get the URL of the document.
-  var url = doc.getUrl();
-
-  // Get the email address of the active user - that's you.
-  var email = Session.getActiveUser().getEmail();
-
-  // Get the name of the document to use as an email subject line.
-  var subject = doc.getName();
-
-  // Append a new string to the "url" variable to use as an email.
-  var body = 'Link to your doc: ' + url;
-
-  // Send yourself an email with a link to the document.
-  GmailApp.sendEmail(email, subject, body);
-}
-        </pre>
-      <figcaption>
-        <strong>Listing 1</strong>: Beispiel Google Script: Spreadsheet
-        erstellen und Link per Mail senden <a href="#r7">[7]</a>
-      </figcaption>
-    </figure>
+    <h4>2.2.2 Case Study</h4>
+    <p>
+      A case study is an empirical inquiry that uses a variety of sources of data to examine one or a few instances of 
+      software phenomena in its real context. It can be used to assess which of the two methods is more suited in a certain 
+      context. Research published in 2009, shows that case studies are the most frequently used in evaluating techniques 
+      in computer science [Taxanomy one].
+    </p>
+    <h4>2.2.1 Experiment</h4>
+    <p>
+      An experiment is an empirical inquiry in which one can manipulate certain factors or variables in order to study 
+      the change in the final outcome. Experiment can be human-oriented in which humans apply different treatments to objects, 
+      or technology-oriented where different tools are applied to different objects.  
+    </p>
   </section>
+  <section>
+    <h2>3. Importance of Evaluation in Research Process</h2>
+    <p>Vital for assessing the validity of ideas or finding</p>
+  </section>
+  <section class="references">
+    <h2>***** . Bibliography</h2>
+    <p class="reference" id="r1">
+      [1] Glass, R.L. "The Software-Research Crisis". IEEE Software, vol 11, no. 6, 1994, pp. 42-47. Institute Of Electrical And Electronics Engineers (IEEE),
+      <a
+        href=" https://doi.org/10.1109/52.329400"> https://doi.org/10.1109/52.329400</a>
+    </p>
+    </section>
   <section>
     <h3>2.2. Datenschutz und -sicherheit</h3>
     <p>
@@ -774,11 +775,9 @@ function createAndSendDocument() {
   <section class="references">
     <h2>6. Literaturverzeichnis</h2>
     <p class="reference" id="r1">
-      [1] Barth, Dave (2013, August 13). Google Cloud Storage now provides
-      server-side encryption [Online]. Available:
+      [1] Glass, R.L. "The Software-Research Crisis". IEEE Software, vol 11, no. 6, 1994, pp. 42-47. Institute Of Electrical And Electronics Engineers (IEEE),
       <a
-        href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html">http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a>
-      (28.06.2014)
+        href=" https://doi.org/10.1109/52.329400"> https://doi.org/10.1109/52.329400</a>
     </p>
     <p class="reference" id="r2">
       [2] BitTorrent Sync [Online]. Available:
