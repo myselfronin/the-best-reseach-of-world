@@ -27,91 +27,80 @@
   <section>
     <h2>1. Introduction</h2>
     <p>
-      Software integration from kitchens to cars, for the benefit of human civilization, is advancing at a rapid rate.
-      One can find software in virtually everything used in daily life. The field has stretched itself eminently by
-      changing the way we govern, gain education, manage health, organize businesses, and so on. This means a huge
-      amount of software has and is being developed every day. Along with the growth, the complexity of software
-      products has also increased remarkably. The development process has become vulnerable to missing deadlines,
-      low quality, cost overruns, and so on. Such problems or challenges must be overcome so as to prosper the whole
+      Software integration from kitchens to cars, for the benefit of human civilization, is advancing at a rapid rate. One can find software 
+      in virtually everything used in daily life. The field has stretched itself eminently by changing the way we govern, gain education, 
+      manage health, organize businesses, and so on. This means a huge amount of software has and is being developed every day. Along with 
+      the growth, the complexity of software products has also increased remarkably. The development process has become vulnerable to 
+      missing deadlines, low quality, cost overruns, and so on. Such problems or challenges must be overcome so as to prosper the whole 
       field of software engineering toward a better future.
     </p>
     <p>
-      Along with the intricacy of software, the optimization of software phenomena or even finding effective ones has
-      become a challenging task. Nevertheless, it is crucial for companies or organizations to continuously improve
-      their software process in order to deliver high-quality software within a specified timeframe, budget, and with
-      available resources. It is obligatory for companies or organizations to continuously improve their
-      development tools or techniques, in order to deliver high-quality software within a specified timeframe, budget,
-      and with available
-      resources. Thus, a systematic and disciplined approach to improving the such phenomena is needed.
+      Along with the intricacy of software, the optimization of software phenomena or even finding effective ones has become a challenging task. 
+      Nevertheless, it is crucial for companies or organizations to continuously improve their software process in order to deliver high-quality 
+      software within a specified timeframe, budget, and with available resources. A systematic and disciplined approach to improving such 
+      phenomena is needed. Additionally, thousands of research for the sake of improvement are proposed but most of them lack or have low quality 
+      for validation. Such proposals can be evaluated using empirical methods which are best suited as the practitioner's perspective is the solid 
+      acceptance of proposed improvements.
     <p>
-      This paper highlights methods that can be used to perform an evaluation in software engineering, mostly the
-      empirical
-      research methods. A detailed description about three different approaches to empirical studies, namely,
-      quantitative,
-      qualitative, and mixed methods have been discussed. Also, it presents the findings of performing surveys and
-      interviews
-      for evaluation of the code review process.
+      This paper highlights the major empirical methods that can be used to perform an evaluation in software engineering. It also features the 
+      advantages and disadvantages of those methods. Also, we have discussed some of the importance of evaluation in software engineering in the 
+      later section before presenting a demonstration of our findings on performing surveys and interviews as strategies for those methods.
     </p>
   </section>
   <section>
     <h2>2. Empirical Software Engineering Evaluation</h2>
     <h3>2.1 Overview</h3>
     <p>
-      Scientific methods should be used to influence software development. Glass<a href="#r1" class="reference">[1]</a>,
-      has summarized four methods for research in the field of software engineering i.e. <i>Scientific Method</i>,
-      <i>Engineering Method</i>,
-      <i>Empirical Method</i> and <i>Analytical Method</i>.
-      Although other methods are also necessary for software engineering, the focus of this paper is on
-      <strong>Empirical Method.</strong>
+      One of the pioneers of the SE research community, Robert Glass<a href="#r1">[1]</a> has summarized four methods for research in the field of software engineering 
+      i.e. Scientific Method, Engineering Method, Empirical Method, and Analytical Method. In Scientific Method, the world is observed and a model is 
+      built on which the research object is evaluated; Engineering Method is about proposing changes to current solutions and then evaluating them;
+       Analytical Method is used when a formal theory is proposed and is compared with empirical observation; in Empirical Method a model is evaluated 
+       empirically.
+      <p> 
+      Although other methods are also necessary for software engineering, the focus of this paper is on <strong>Empirical Methods.</strong>
       Software engineering is driven by the professionals involved in software development. In order to
       evaluate the software phenomena, there needs a study on how software practitioners solve software problems ie
       discover their instincts or experience on the topic under discussion. Such phenomena can be processes,
       tools, techniques, policies, practices, and so on, used for developing software. Evaluating such phenomena using
       empirical strategies can be termed Empirical Evaluation in Software Engineering.
+      </p>
     </p>
-    <h3>2.2 Empirical Strategies</h3>
+    <h3>2.2 Empirical Methods</h3>
     <p>
-      Exploratory and Explanatory are two paradigms in empirical studies<a href="#r2">[2]</a>. Exploratory is concerned
-      with understanding
-      the point of view and discovering the notices of the subject. The subject would mean the person participating in
-      the
-      empirical studies for evaluating an object. These are informed by the qualitative data. On the other hand,
-      Explanatory is concerned with comparing two or more groups to identify cause-effect relationships. As this is
-      informed
-      by quantitative data, one can perform comparison and statistical analysis on them. Both quantitative and
-      qualitative
-      research investigations can be implemented on the same topic.
+      Qualitative and Quantitative are two main types of research paradigms in empirical studies[2]. Qualitative is concerned with understanding 
+      the point of view and discovering the notices of the subject. The subject would mean the person participating in the empirical studies for 
+      evaluating an object. These are informed by the qualitative data. On the other hand, Quantitative is concerned with comparing two or more 
+      groups to identify cause-effect relationships. As this is informed by quantitative data, one can perform comparison and statistical analysis 
+      on them. Both quantitative and qualitative research investigations can be implemented on the same topic. However, instead of being opposite 
+      poles, these method represents the different end of a continuum<a href="#r4">[ Newman & Benz, 1998]</a>
     </p>
     <p>
-        In this paper, we are going to go deeper into three research approaches:
-        quantitative, qualitative and mixed methods. Mostly, quantitative and
-        qualitative approaches are seen as opposite sides or distinct
-        categories. Instead, they represent different ends of a continuity so a
-        study can be more quantitative in some aspects than qualitative or the
-        other way. For some cases, a mixed method research is needed to
-        incorporate elements of both quantitative and qualitative. [todo page 41
-        first paragraph]
-      </p>
-      <p>
-        Traditionally, quantitative and qualitative research are differentiated
-        by the idea that quantitative research uses numbers instead of words
-        used by qualitative research or that quantitative research uses
-        closed-ended questions and qualitative research uses open-ended
-        questions. This is indeed true but a more complete way to see the
-        differences between these two approaches is to look at the types of
-        research strategies used(e.g, surveys, experiments, interviews),
-        philosophical assumptions brought by the researcher and the method or
-        tools used to conduct these approaches (e.g., instruments used to
-        collect quantitative data or observations used to collect qualitative
-        data). Quantitative research has dominated the research approaches from
-        the late 19th to mid-20th century. After that period of time, the
-        interest for qualitative research approaches increased, thus growing the
-        interest for mixed research methods. [todo page 41 second paragraph]
-      </p>
+      Traditionally, these two research are differentiated by closed-ended questions and responses, giving us a numerical result (quantitative) 
+      or open-ended questions and responses resulting in answers in words (qualitative) [Green book]. For example, when evaluating the code review 
+      process, one can ask about its effectiveness which gives answers on a range scale (i.e numbers). Whereas, others can inquire about ways to 
+      make the code review process more effective. The formal question is a part of quantitative research and the latter is for qualitative research. 
+      But a complete way to see the difference between these two is to look at the basic assumptions, the types of research strategies used, and the 
+      method for conducting those strategies.[Green book]. A study can be more quantitative and less qualitative in some and for others, it is vice-versa.
+    </p>
   </section>
   <section>
     <h2>3. Importance of Evaluation in Research Process</h2>
-    <p>Vital for assessing the validity of ideas or finding</p>
+    <p>
+      In order to assess the validity of techniques or methods, evaluation of such a proposal is critical. If proper evidence or proof of new or 
+      improvised conventions is available then the software practitioner would get more confidence in using them. It enables us to set standards 
+      in working with a common problem and drive the software space more scientifically. Rather than a random instinct or guess for developing 
+      solutions, we should use scientifically validated methodologies which leads to a systematic improvement of the whole process. The need for 
+      the usage of empirically evaluated engineering is more essential for us than ever because of the fast-growing and challenging software industry. 
+      Our decision for utilizing certain tools or processes is driven by the evaluation present when such tools or processes are proposed. This not 
+      only contributes to methodical improvement but the overall enhancement of software engineering.
+    </p>
+    <p>
+      Unfortunately, the condition of evalution in research within computer science or software engineering is not satisfactory. Additionally, the software
+      practitioners themselves are not looking for validity of the new ways propsed in this research area. Some critics have even said that: "SE research suffers
+      from irrelevance. Research outputs have little relevance to software practice."[Tan ang Tang 2019].
+      A half century of development of this industry, the scientific development is still lacking. A study on evaluation in computer science published 
+      by ACM in two different time i.e 1995 and 2008, was done. 
+    </p>
   </section>
 
   </section>
@@ -394,7 +383,7 @@ take in order to be effective?
           helpful
           because the senior's guidance could make their code quality better. For seniors, it was more about witnessing
           different
-          perspective of developing solutions to the same problem.
+          perspectives of developing solutions to the same problem.
         </p>
       </figure>
       <figure id="wc1">
@@ -406,8 +395,8 @@ take in order to be effective?
       <p>
         For daily use, <a href="https://about.gitlab.com/">GitLab</a> was the most popular tool for reviewing codes, among
         them.
-        Whereas, <a href="https://www.sonarqube.org/">SonarQube</a> was suggested as automated tool which could help in
-        the code review process for making it more effective.Some other tools that was mentioned in the interview are in
+        Whereas, <a href="https://www.sonarqube.org/">SonarQube</a> was suggested as an automated tool that could help in
+        the code review process for making it more effective.Some other tools that were mentioned in the interview are in
         <a href="#wc2">Figure 2</a>.
         One interviewee suggested splitting issues into small cards within GitLab would help in reviewing code for other
         developers and make it easier to modify codes. Another interviewee even claimed that
@@ -419,14 +408,13 @@ take in order to be effective?
           <strong>Figure 1</strong>: Code Review Tools
         </figcaption>
       </figure>
-      <p>We asked if they agree that the code review process shortens time in long run even its time consuming at
-        beginning.
-        We got mixed ansers on this. Some said that it is or should (if not) already be in planning of the development.
-        Hence the review is not a factor for time constraint but rather a standard process for quality code.
-        Other agreed on the propsed statement saying that the possible bug are already detected to it save the struggle
-        and time for fixing it. Apart from the tools, pair programming was also advised to be
-        a method that would increase the productivity. One interviewee suggested to skip the minor fixes and focus
-        more into the bigger picture (on security vulnerabilities, memory leakage, redability, etc).
+      <p>
+        We asked if they agree that the code review process shortens the time in the long run even it's time-consuming at the 
+        beginning. We got mixed answers on this. Some said that it is or should (if not) already be in the planning of the development. 
+        Hence the review is not a factor for time constraints but rather a standard process for quality code. Others agreed with the proposed 
+        statement saying that the possible bug is already detected to it save the struggle and time for fixing it. Apart from the tools, 
+        pair programming was also advised to be a method that would increase productivity. One interviewee suggested skipping the minor fixes 
+        and focusing more on the bigger picture (on security vulnerabilities, memory leakage, readability, etc).
       </p>
     </section>
     <h3>5.3 Conclusion</h3>
@@ -445,14 +433,10 @@ take in order to be effective?
       [2] Wohlin, Claes. Experimentation In Software Engineering. Springer, 2012.
     </p>
     <p class="reference" id="r3">
-      [3] Borgmann, Moritz et al. "On the Security of Cloud Storage".
-      Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports.
-      SIT-TR-2012-001. March 2012
+      [3] Wohlin, C., Höst, M., & Henningsson, K. (2003). Empirical Research Methods in Software Engineering. ESERNET.
     </p>
     <p class="reference" id="r4">
-      [4] Boxcryptor [Online]. Available:
-      <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a>
-      (29.06.2014)
+      [4] Brewer, J., Newman, I., & Benz, C. (1999). Qualitative-Quantitative Research Methodology: Exploring the Interactive Continuum. Contemporary Sociology, 28(2), 245. doi: 10.2307/2654917
     </p>
     <p class="reference" id="r5">
       [5] Connect.de. So Installieren Sie ownCloud auf einem Raspberry Pi
